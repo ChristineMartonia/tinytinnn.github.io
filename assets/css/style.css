@@ -8,6 +8,8 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
@@ -231,6 +233,10 @@ h6 {
   background: url("../img/hero-bg.png") top center;
   background-size: cover;
 }
+#hero .typed{
+  color: #ed0e0e;
+  font-weight: 700;
+}
 
 #hero:before {
   content: "";
@@ -252,9 +258,9 @@ h6 {
 #hero h1 {
   margin: 0 0 10px 0;
   font-size: 64px;
-  font-weight: 700;
   line-height: 56px;
-  color: #fff;
+  color: white;
+  font-weight: 700;
 }
 
 #hero p {
