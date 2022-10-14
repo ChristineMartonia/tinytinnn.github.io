@@ -3,7 +3,7 @@
 }*/
 *:root{
   --sidetxt: #E5CB9F;
-  --hover:#FFFF00;
+  --hover:#a70000;
 }
 
 
@@ -442,11 +442,11 @@ section {
   display: block;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  color: white;
+  color: black;
 }
 #skills{
-  background-color: #272829;
-  color:white;
+  background-color: #dce3e9;
+  color:black;
 }
 
 .skills .progress .skill .val {
@@ -455,7 +455,7 @@ section {
 }
 
 .skills .progress-bar-wrap {
-  background: #dce8f8;
+  background: white;
   height: 10px;
 }
 
