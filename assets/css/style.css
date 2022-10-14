@@ -1,18 +1,25 @@
 /**{
 
 }*/
+*:root{
+  --sidetxt: #E5CB9F;
+  --hover:#FFFF00;
+}
+
+
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
 }
 
 a {
-  color: #149ddd;
+  color: var(--hover);
   text-decoration: none;
 }
 
 a:hover {
-  color: #37b3ed;
+  color: var(--hover);
   text-decoration: none;
 }
 
@@ -35,7 +42,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #149ddd;
+  background: #000;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -49,8 +56,8 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #2eafec;
-  color: #fff;
+  background: black;
+  color: var(--hover);
 }
 
 .back-to-top.active {
@@ -71,7 +78,7 @@ h6 {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: #040b14;
+  background-image: url("https://pa1.narvii.com/7919/0e6ea227c99ff115205460c0829bb7dfd06902cbr1-434-250_hq.gif");
   overflow-y: auto;
 }
 
@@ -79,7 +86,7 @@ h6 {
   margin: 15px auto;
   display: block;
   width: 120px;
-  border: 8px solid #2c2f3f;
+  border: 3px solid var(--hover);
 }
 
 #header .profile h1 {
@@ -94,7 +101,7 @@ h6 {
 
 #header .profile h1 a,
 #header .profile h1 a:hover {
-  color: #fff;
+  color:white;
   text-decoration: none;
 }
 
@@ -103,6 +110,7 @@ h6 {
   display: inline-block;
   background: #212431;
   color: #fff;
+  border: 1px solid var(--sidetxt);
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -114,8 +122,8 @@ h6 {
 }
 
 #header .profile .social-links a:hover {
-  background: #149ddd;
-  color: #fff;
+  background: var(--hover);
+  color: black;
   text-decoration: none;
 }
 
@@ -167,7 +175,7 @@ h6 {
 .nav-menu a:focus i {
   font-size: 24px;
   padding-right: 8px;
-  color: #6f7180;
+  color: var(--sidetxt);
 }
 
 .nav-menu a:hover,
@@ -182,7 +190,7 @@ h6 {
 .nav-menu .active i,
 .nav-menu .active:focus i,
 .nav-menu li:hover>a i {
-  color: #149ddd;
+  color: var(--hover);
 }
 
 /* Mobile Navigation */
@@ -195,7 +203,7 @@ h6 {
   font-size: 24px;
   transition: all 0.4s;
   outline: none !important;
-  background-color: #149ddd;
+  background-color: var(--hover);
   color: #fff;
   width: 40px;
   height: 40px;
@@ -265,7 +273,7 @@ h6 {
   color: #fff;
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 3px solid #149ddd;
+  border-bottom: 3px solid --hover;
 }
 
 @media (min-width: 1024px) {
@@ -320,7 +328,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #149ddd;
+  background: var(--hover);
   bottom: 0;
   left: 0;
 }
@@ -356,7 +364,7 @@ section {
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #149ddd;
+  color: var(--hover);
   line-height: 0;
 }
 
@@ -379,7 +387,7 @@ section {
 .facts .count-box i {
   display: block;
   font-size: 44px;
-  color: #149ddd;
+  color: var(--hover);
   float: left;
   line-height: 0;
 }
@@ -418,11 +426,13 @@ section {
 /*--------------------------------------------------------------
 # Akills
 --------------------------------------------------------------*/
+
 .skills .progress {
   height: 60px;
   display: block;
   background: none;
   border-radius: 0;
+  color: white;
 }
 
 .skills .progress .skill {
@@ -432,7 +442,11 @@ section {
   display: block;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  color: #050d18;
+  color: white;
+}
+#skills{
+  background-color: #272829;
+  color:white;
 }
 
 .skills .progress .skill .val {
@@ -449,7 +463,7 @@ section {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #149ddd;
+  background-color: var(--hover);
 }
 
 /*--------------------------------------------------------------
@@ -545,7 +559,7 @@ section {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color: #149ddd;
+  color: var(--hover);
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -635,11 +649,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #149ddd;
+  border: 1px solid --hover;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #149ddd;
+  background-color: var(--hover);
 }
 
 .portfolio-details .portfolio-info {
@@ -693,10 +707,10 @@ section {
   justify-content: center;
   width: 54px;
   height: 54px;
-  background: #149ddd;
+  background: var(--hover);
   border-radius: 50%;
   transition: 0.5s;
-  border: 1px solid #149ddd;
+  border: 1px solid --hover ;
 }
 
 .services .icon i {
@@ -710,7 +724,7 @@ section {
 }
 
 .services .icon-box:hover .icon i {
-  color: #149ddd;
+  color: var(--hover);
 }
 
 .services .title {
@@ -725,7 +739,7 @@ section {
 }
 
 .services .title a:hover {
-  color: #149ddd;
+  color:var(--hover);
 }
 
 .services .description {
@@ -819,11 +833,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #149ddd;
+  border: 1px solid --hover;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #149ddd;
+  background-color: var(--hover);
 }
 
 /*--------------------------------------------------------------
@@ -842,7 +856,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #149ddd;
+  color: var(--hover);
   float: left;
   width: 44px;
   height: 44px;
@@ -893,14 +907,14 @@ section {
 }
 
 .contact .info .social-links a:hover {
-  background: #149ddd;
+  background: var(--hover);
   color: #fff;
 }
 
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #149ddd;
+  background: var(--hover);
   color: #fff;
 }
 
@@ -989,7 +1003,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #149ddd;
+  background: var(--hover);
   border: 0;
   padding: 10px 24px;
   color: #fff;
